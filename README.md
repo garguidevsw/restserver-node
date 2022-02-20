@@ -12,4 +12,4 @@ RestServer básico con NodeJS - Express
 
 - Puerto definido en variables de entorno
 
-NOTA: Ejecutar ```npm install``` para reconstruir los módulos de Node.
+NOTA: Ejecutar ```npm install``` para reconstruir los módulos de Node y definir archivo .env con el puerto del webserver. Ejemplo: ```PORT=8080```
