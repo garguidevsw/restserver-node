@@ -76,16 +76,11 @@ const usuariosPATCH = (req, res = response) => {
     })
 }
 
-const usuariosDELETE = async (req, res = response) => {
+const usuariosDELETE = async (req = request, res = response) => {
     const { id } = req.params;
-
-    // Borrado de la base de datos
-    // const user = await User.findByIdAndDelete(id);
-
 
     // Borrar solo marcando el registro
     const user = await User.findByIdAndUpdate(id, {status: false});
-
 
     res.status(200).json({
         user
